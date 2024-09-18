@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia de Amor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-800">
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4 bg-white shadow-lg">
+        <h1 class="text-xl font-bold">Mi Página</h1>
+        <button id="menu-button" class="block md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+        <nav id="menu" class="hidden md:flex space-x-4">
+            <a href="#" class="text-gray-700 hover:text-gray-900">Inicio</a>
+            <a href="#" class="text-gray-700 hover:text-gray-900">Sobre Nosotros</a>
+            <a href="#" class="text-gray-700 hover:text-gray-900">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Imagen central -->
+    <main class="p-6 text-center">
+        <img src="assets/images/fotos con emmy/primera_foto_1.JPG" alt="Imagen principal" class="mx-auto my-6 max-w-full h-auto">
+        <p class="text-lg my-4">Nuestra primer fotito juntos. Yo solo iba desayunar y termine con el amor de mi vida. </p>
+
+        <!-- Espacio entre secciones -->
+        <div class="my-12"></div>
+
+        <!-- Dos imágenes con Lorem Ipsum debajo -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="text-center">
+                <img src="assets/images/fotos con emmy/fulbito.JPG" alt="Imagen 1" class="mx-auto mb-4">
+                <p>Sisisis viva gooool siiiii.</p>
+            </div>
+            <div class="text-center">
+                <img src="assets/images/fotos con emmy/septiembre.jpg" alt="Imagen 2" class="mx-auto mb-4">
+                <p>Viva méxico, viva emmyyy siiii.</p>
+            </div>
+        </div>
+
+        <!-- Botones -->
+        <div class="flex justify-center space-x-4 mt-8">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Botón 1</button>
+            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700" id="show-code">Ir a Ejemplo de Código</button>
+        </div>
+
+        <!-- Sección oculta de ejecutar código -->
+        <section id="code-section" class="hidden mt-12">
+            <h2 class="text-lg font-bold mb-4">Ingresa tu código JavaScript aquí:</h2>
+            <textarea id="code-input" class="w-full h-32 p-2 border rounded mb-4" placeholder="Escribe aquí tu código..."></textarea>
+            <button id="run-code" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Ejecutar</button>
+
+            <h3 class="text-lg font-bold mt-6">Resultado:</h3>
+            <div id="result" class="w-full h-32 p-4 border rounded bg-gray-100 mt-2"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-4 bg-white text-center">
+        <p>&copy; 18-09-2024. 1st Era.</p>
+    </footer>
+
+    <!-- Elemento de audio oculto -->
+    <audio id="background-music" loop>
+        <source src="assets/musica/taylor vs fred aisic version.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
